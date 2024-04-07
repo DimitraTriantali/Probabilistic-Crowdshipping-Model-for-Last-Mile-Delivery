@@ -28,7 +28,7 @@ The information about classical vehicles is provided in rows indexed by t+c+o+1,
 
 The emergency vehicle's information is provided in the last row. The "lat_or" and "lon_or" represent the latitude and longitude of its origin, while its destination is included in the "lat_des" and "lon_des" columns.
 
-Furthermore, the employed distances between the corresponding nodes of each scenario are included in the [distances](https://github.com/DimitraTriantali/Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery/tree/00f4b4d955f500349154f786af01098f8c7eb8cb/data/distances) folder. We append each scenario's name by a variable m &isin; \{bicycle, car, motorcycle, pedestrian, truck\} that denotes the employed mode of transportation.
+Furthermore, the employed distances between the corresponding nodes of each scenario are included in the [distances](https://github.com/DimitraTriantali/Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery/tree/00f4b4d955f500349154f786af01098f8c7eb8cb/data/distances) folder organized into 3 files based on the value of t. We append each scenario's name by a variable m &isin; \{bicycle, car, motorcycle, pedestrian, truck\} that denotes the employed mode of transportation.
 
 ## Results
 
