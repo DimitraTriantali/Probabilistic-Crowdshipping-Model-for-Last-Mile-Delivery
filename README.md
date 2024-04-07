@@ -32,13 +32,7 @@ Furthermore, the employed distances between the corresponding nodes of each scen
 
 ## Results
 
-#### Decisions
-
-The results of the decision-making model are included in the file [decisions_using_boosting_predictions](https://github.com/DimitraTriantali/Data-driven-optimization-of-vendor-managed-inventory-for-replenishment-and-distribution-decisions/blob/aa91360599262e5b278926e65e0f8df58bc06338/results/decisions/decisions_using_boosting_predictions.zip). More specifically, for each scenario, the order quantities, inventory levels, and lost sales for the vendor and each retailer are provided. Especially for the base scenario, the folder [capacities](https://github.com/DimitraTriantali/Data-driven-optimization-of-vendor-managed-inventory-for-replenishment-and-distribution-decisions/tree/cc9df78bc4a1ecca763e4408a7b0ed3560dc9628/results/decisions/capacities) contains this information with varying values of the capacity parameters, while the folder [decisions_on_base_scenario](https://github.com/DimitraTriantali/Data-driven-optimization-of-vendor-managed-inventory-for-replenishment-and-distribution-decisions/tree/cc9df78bc4a1ecca763e4408a7b0ed3560dc9628/results/decisions/decisions_on_base_scenario) provides the data when using the predictions of the four forecasting approaches as well as the real demands during the decision-making process.
-
-#### Predicted demands
-
-The predicted demands are stored in the [forecasted_demands](https://github.com/DimitraTriantali/Data-driven-optimization-of-vendor-managed-inventory-for-replenishment-and-distribution-decisions/tree/ac7ea8203ce8d29d5b5a3d23e090849b26785c40/results/forecasted_demands) folder, with each file named as p_prediction_results_T_t, where p represents the employed forecasting approach (ADD, ARIMA, FFNN, BOOSTING), and t denotes the length of the time horizon (1, 3, 7, 14). Each file contains the top-performing variation of the forecasting approach for each retailer, based on achieving the lowest mean squared error (MSE) within the testing vector. The file also includes the corresponding MSE and the predictions.
+The results of the decision-making model for the constructed scenarios are included in the file [scenarios_results](https://github.com/DimitraTriantali/Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery/tree/ba03572fe9926b80238ed645ba4db7fc3b09042d/results/scenarios_results) organized by the value of t. More specifically, for each scenario, .... Especially for the 0_10_10_1 scenario, the file [varying_b_od_ed_fees](https://github.com/DimitraTriantali/Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery/blob/ba03572fe9926b80238ed645ba4db7fc3b09042d/results/varying_b_od_ed_fees.zip) contains this information with varying values of the acceptance threshold and the occasional and emergency fees. 
 
 ## Licence
 
