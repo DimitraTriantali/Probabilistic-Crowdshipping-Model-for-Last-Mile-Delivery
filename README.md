@@ -5,8 +5,6 @@
 
 ## Data
 
-#### Created scenarios
-
 For the experimental analysis of the proposed strategy, a test suite consisting of 81 scenarios was produced by the combinations of the following values for the underlying parameters:
 
 - Number of transshipment nodes: t &isin; \{0, 1, 2\}
