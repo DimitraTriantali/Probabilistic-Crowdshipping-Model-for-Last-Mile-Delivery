@@ -5,7 +5,7 @@
 
 ## Data
 
-For the experimental analysis of the proposed strategy, a test suite consisting of 81 scenarios was produced by the combinations of the following values for the underlying parameters:
+For the experimental analysis of the proposed model, a test suite consisting of 81 scenarios was produced by the combinations of the following values for the underlying parameters:
 
 - Number of transshipment nodes: t &isin; \{0, 1, 2\}
 - Total number of customers: c &isin; \{10, 15, 20\}
