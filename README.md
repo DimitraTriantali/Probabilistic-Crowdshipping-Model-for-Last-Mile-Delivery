@@ -7,21 +7,18 @@
 
 #### Created scenarios
 
-For the experimental analysis of the proposed strategy, a test suite consisting of 36 scenarios was produced by the combinations of the following values for the underlying parameters:
+For the experimental analysis of the proposed strategy, a test suite consisting of 81 scenarios was produced by the combinations of the following values for the underlying parameters:
 
-- Time horizon: t &isin; \{1, 3, 7, 14\}
-- Number of VMIs: v &isin; \{5, 10, 20\}
-- Number of non-VMIs: n &isin; \{5, 10, 20\} 
+- Number of transshipment nodes: t &isin; \{0, 1, 2\}
+- Total number of customers: c &isin; \{10, 15, 20\}
+- Available occasional drivers: o &isin; \{10, 15, 20\}
+- Number of classical vehicles: v &isin; \{1, 2, 3\}
 
-The corresponding parameter values per scenario were also used as the naming convention: Tt_Vv_Nn. For example, the scenario with a time horizon of 7 time periods, 10 VMIs, and 20 non-VMIs is denoted as T7_V10_N20. 
+The corresponding parameter values per scenario were also used as the naming convention: t_c_o_v. For example, the scenario with 2 transshipment nodes, 20 customers, 15 occasional drivers, and 3 classical vehicles is denoted as 2_20_15_3. 
 
-The created scenarios are stored in the [scenarios](https://github.com/DimitraTriantali/Data-driven-optimization-of-vendor-managed-inventory-for-replenishment-and-distribution-decisions/tree/390f2e8355d99cec7f17cc138dfa3883d6822e53/data/scenarios) folder. Data is stored for both the vendor and all retailers in every scenario. The first column shows the indicators, while the second column displays the title of the information provided. The third column displays the vendor's ordering and holding costs. Each retailer's info is listed in columns retailer_1 to retailer_(m+n), describing its ordering, holding, and lost sales cost, as well as the hyperparameter(s) of its demand distribution.
+The created scenarios are stored in the [scenarios]() folder. The first row of the dataset contains details about the company's permanent installations. The "lat_or" and "lon_or" columns represent the depot's latitude and longitude, while the "lat_des" and "lon_des" columns indicate the latitude and longitude of the node where the company's permanent fleets finish their routes. If the dataset includes transshipment nodes, their information is listed in rows 1,2,…,t. "lat_or" and "lon_or" indicate the node's latitude and longitude, while "max_capacity" denotes its maximum capacity. The customers' information is provided in the rows indexed by t+1,t+2,...,t+c. "lat_or" and "lon_or" indicate the latitude and longitude of their location, respectively. The "demand" field denotes the weight of their order, while the "prob" column represents the probability of being delivered by an occasional driver if assigned to one. The information on occasional drivers can be found in the rows indexed by t+c+1,t+c+2,...,t+c+o. The columns "lat_or" and "lon_or" represent the latitude and longitude of their starting point. On the other hand, the "lat_des" and "lon_des" columns show the latitude and longitude of their destination. The "transport_mode" column describes the mode of transportation the occasional driver uses. The "max_capacity" column represents the maximum weight they can carry, and the "prob" column includes the probability of accepting the assigned order. The "radius" column indicates the maximum distance they are willing to travel to deliver the order. The information about classical vehicles is provided in rows indexed by t+c+o+1,t+c+o+2,...,t+c+o+v. The "lat_or" and "lon_or" indicate the latitude and longitude of their origin, while the "lat_des" and "lon_des" columns show their destination. The "transport_mode" column denotes the mode of transport used by these vehicles, and the "max_capacity" column specifies the maximum weight they can carry. The emergency vehicle's information is provided in the last row. The "lat_or" and "lon_or" represent the latitude and longitude of its origin, while its destination is included in the "lat_des" and "lon_des" columns.
 
-#### Retailers' demands
-
-To differentiate between the retailers, we have designated two indices for each. The first index, j, indicates the type of retailer, with a value of V for VMIs and N for non-VMIs. The second index, i, corresponds to the retailer's unique ID and ranges from 1 to 20. For the sake of simplicity, we refer to each retailer as j_i. 
-
-The demand history of all retailers is included in the [demands](https://github.com/DimitraTriantali/Data-driven-optimization-of-vendor-managed-inventory-for-replenishment-and-distribution-decisions/tree/390f2e8355d99cec7f17cc138dfa3883d6822e53/data/demands) folder. From each demand time-series, the forecast model employs the last 180 values.
+Furthermore, the employed distances between the corresponding nodes of each scenario are included in the [distances]() folder. We append each scenario's name by a variable m &isin; \{bicycle, car, motorcycle, pedestrian, truck\} that denotes the employed mode of transportation.
 
 ## Results
 
