@@ -12,9 +12,9 @@ For the experimental analysis of the proposed model, a test suite consisting of 
 - Available occasional drivers: o &isin; \{10, 15, 20\}
 - Number of classical vehicles: v &isin; \{1, 2, 3\}
 
-The corresponding parameter values per scenario were also used as the naming convention: t_c_o_v. For example, the scenario with 2 transshipment nodes, 20 customers, 15 occasional drivers, and 3 classical vehicles is denoted as 2_20_15_3. 
+The corresponding parameter values per scenario were also used as the naming convention: t_c_o_v. For example, the scenario with 2 transshipment nodes, 20 customers, 15 occasional drivers, and 3 classical vehicles is denoted as 2_20_15_3. The created scenarios are stored in the [scenarios](https://github.com/DimitraTriantali/Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery/tree/cb0a08ec8adb88e9c20a5674432e1c6c68e437db/data/scenarios) folder. 
 
-The created scenarios are stored in the [scenarios](https://github.com/DimitraTriantali/Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery/tree/cb0a08ec8adb88e9c20a5674432e1c6c68e437db/data/scenarios) folder. The first row of the dataset contains details about the company's permanent installations. The "lat_or" and "lon_or" columns represent the depot's latitude and longitude, while the "lat_des" and "lon_des" columns indicate the latitude and longitude of the node where the company's permanent fleets finish their routes. 
+The first row of the dataset contains details about the company's permanent installations. The "lat_or" and "lon_or" columns represent the depot's latitude and longitude, while the "lat_des" and "lon_des" columns indicate the latitude and longitude of the node where the company's permanent fleets finish their routes. 
 
 If the dataset includes transshipment nodes, their information is listed in rows 1,2,…,t. "lat_or" and "lon_or" indicate the node's latitude and longitude, while "max_capacity" denotes its maximum capacity. 
 
