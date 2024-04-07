@@ -1,4 +1,4 @@
-## Data-driven demand forecasting for vendor-managed inventory optimization.
+## Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery.
 - Dimitra G. Triantali (d.triantali@uoi.gr)
 - Konstantina Skouri (kskouri@uoi.gr)
 - Konstantinos E. Parsopoulos (kostasp@uoi.gr)
