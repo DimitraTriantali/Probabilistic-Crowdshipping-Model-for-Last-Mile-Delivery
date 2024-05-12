@@ -36,4 +36,4 @@ Especially for the 0_10_10_1 scenario, the file [varying_b_od_ed_fees](https://g
 
 ## Licence
 
-[MIT License](https://github.com/DimitraTriantali/VMI/blob/1b942e22cf74f78bf53897459dacd401e654d56a/LICENSE)
+[MIT License](https://github.com/DimitraTriantali/Probabilistic-Crowdshipping-Model-for-Last-Mile-Delivery/blob/64a160ea27976dd15d6a9a6a4b97ac2e41ef3fc9/LICENSE)
